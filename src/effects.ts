@@ -10,6 +10,7 @@ export function runDefaultMountEffects(defaultAppLink: string) {
     const mountedApps = getMountedApps();
     if (!mountedApps.length) {
       navigateToUrl(defaultAppLink);
+      console.log(defaultAppLink);
     }
   }, { once: true });
 
